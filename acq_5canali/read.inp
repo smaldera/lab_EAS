@@ -1,0 +1,10 @@
+nev = 100
+i = 100000
+
+# 0-> adc AND tdc, 1-> ADC, 2->TDC
+daq_typ = 2
+
+outfileTDC1 = /home/kgdaq/Desktop/Esperienza_EAS/2011/TDC_coincidenza5_3500_soglia140.root
+outfileTDC2 = /home/kgdaq/Desktop/Esperienza_EAS/2011/TDC_coincidenza5_3500_soglia140.dat
+outfileADC1 = /home/kgdaq/Desktop/Esperienza_EAS/2011/ADC_coincidenza5_3500_soglia140.root
+outfileADC2 = /home/kgdaq/Desktop/Esperienza_EAS/2011/ADC_coincidenza5_3500_soglia140.dat
