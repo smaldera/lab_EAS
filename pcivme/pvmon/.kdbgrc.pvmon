@@ -1,0 +1,47 @@
+[Breakpoint 0]
+Enabled=true
+File=./pvmon.c
+Line=702
+Temporary=false
+
+[Breakpoint 1]
+Enabled=true
+File=./pvmon.c
+Line=1651
+Temporary=false
+
+[Breakpoint 2]
+Enabled=true
+File=./pvmon.c
+Line=1697
+Temporary=false
+
+[Breakpoint 3]
+Enabled=true
+File=./pvmon.c
+Line=1604
+Temporary=false
+
+[General]
+DebuggerCmdStr=
+FileVersion=1
+ProgramArgs=
+TTYLevel=7
+WorkingDirectory=
+
+[Memory]
+ColumnWidths=80,255
+Expression1=&Mode
+Expression2=Mode
+Format1=19
+Format2=19
+NumExprs=2
+
+[Watches]
+Expr0=cszDevicePath
+Expr1=InS[0]
+Expr2=Stg
+Expr3=localBuffer
+Expr4=AdrMode
+Expr5=WordMode
+Expr6=Mode

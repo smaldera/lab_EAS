@@ -1,0 +1,10 @@
+Stand: 14.11.2002
+
+1. still a lot of bugs in pvmon
+2. documentation
+3. dircet access to VME
+4. re-porting to kernel 2.2.x
+
+
+
+

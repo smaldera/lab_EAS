@@ -1,0 +1,25 @@
+#!/bin/sh
+module="pcivme"
+device="vmemm_"
+group="root"
+mode="666"
+
+# the modulenumber must be given
+if test $1
+then
+ # invoke insmod
+ # /sbin/insmod -f $module.o || exit 1 
+ /sbin/insmod $module.o || exit 1
+
+ # get major number from /proc/devices
+ major=`cat /proc/devices | awk "\\$2==\"$module\" {print \\$1}"`
+
+ rm -f /dev/${device}$1
+ mknod /dev/${device}$1 c $major $1
+
+ chgrp $group /dev/${device}$1
+ chmod $mode  /dev/${device}$1
+else
+ echo "usage:  pcivme_load module_number"
+fi
+
