@@ -1,0 +1,10 @@
+nev = 20
+i = 1000000
+
+# 0-> adc AND tdc1, 1-> ADC, 2->TDC, 3-> adc AND tdc1 AND tdc2
+daq_typ = 3
+
+outfileTDC1 = TDC.root
+outfileTDC2 = TDC.dat
+outfileADC1 = ADC.root
+outfileADC2 = ADC.dat
