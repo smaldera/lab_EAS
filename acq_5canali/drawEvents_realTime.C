@@ -1,3 +1,10 @@
+// Simple root script to display the events recorded
+// usage: .x drawEvents_realTime.C
+//
+//PS: the scripts reads "ADC.dat" and TDC.dat
+//PS2: si puo' mettere la calibrazione dei t0,peds e mip usando i vettori t0, adc_peds, adc_mips
+
+
 {
     gROOT->Reset();
     gStyle->SetPalette(1);
@@ -5,10 +12,9 @@
     double L=11.9;     
     double Fconv= 0.25; //TDC: ns per canale...
     
-    double t0[5]={0, -34.5 ,-23.89, -16.66, -8.99};  //setup 3mattine 2016
-
-    double adc_peds[5]={0.,0.,0.,0.,0.};
-    double adc_mips[5]={1.,1.,1.,1.,1.};
+    double t0[5]={0, -34.5 ,-23.89, -16.66, -8.99};  // Tempo zero TDC: setup 3mattine 2016
+    double adc_peds[5]={0.,0.,0.,0.,0.};          //Qua vanno i piedistalli [canali]
+    double adc_mips[5]={1.,1.,1.,1.,1.};          //Qua ci andrebbe la calibrazione!!! [canali per mip]
     
     string file_adc="ADC.dat";
     string file_tdc="TDC.dat";
